@@ -9,6 +9,7 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 
 class RegisterController extends Controller
 {
+    protected $redirectTo='/admin';
     /*
     |--------------------------------------------------------------------------
     | Register Controller
@@ -27,7 +28,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+
 
     /**
      * Create a new controller instance.
