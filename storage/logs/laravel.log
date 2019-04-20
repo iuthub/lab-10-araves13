@@ -1,0 +1,153 @@
+[2019-04-20 11:50:47] local.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Cannot redeclare App\Http\Controllers\Auth\LoginController::$redirectTo in /Users/sevara/Desktop/laravel/lab-10-araves13-master/app/Http/Controllers/Auth/LoginController.php:29
+Stack trace:
+#0 {main}  
+[2019-04-20 11:50:51] local.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Cannot redeclare App\Http\Controllers\Auth\LoginController::$redirectTo in /Users/sevara/Desktop/laravel/lab-10-araves13-master/app/Http/Controllers/Auth/LoginController.php:29
+Stack trace:
+#0 {main}  
+[2019-04-20 11:51:09] local.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Cannot redeclare App\Http\Controllers\Auth\LoginController::$redirectTo in /Users/sevara/Desktop/laravel/lab-10-araves13-master/app/Http/Controllers/Auth/LoginController.php:29
+Stack trace:
+#0 {main}  
+[2019-04-20 11:51:27] local.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Cannot redeclare App\Http\Controllers\Auth\LoginController::$redirectTo in /Users/sevara/Desktop/laravel/lab-10-araves13-master/app/Http/Controllers/Auth/LoginController.php:29
+Stack trace:
+#0 {main}  
+[2019-04-20 11:51:42] local.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Cannot redeclare App\Http\Controllers\Auth\LoginController::$redirectTo in /Users/sevara/Desktop/laravel/lab-10-araves13-master/app/Http/Controllers/Auth/LoginController.php:29
+Stack trace:
+#0 {main}  
+[2019-04-20 11:57:12] local.ERROR: PDOException: SQLSTATE[HY000]: General error: 1364 Field 'user_id' doesn't have a default value in /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/laravel/framework/src/Illuminate/Database/Connection.php:480
+Stack trace:
+#0 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/laravel/framework/src/Illuminate/Database/Connection.php(480): PDOStatement->execute()
+#1 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/laravel/framework/src/Illuminate/Database/Connection.php(747): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'insert into `po...', Array)
+#2 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/laravel/framework/src/Illuminate/Database/Connection.php(710): Illuminate\Database\Connection->runQueryCallback('insert into `po...', Array, Object(Closure))
+#3 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/laravel/framework/src/Illuminate/Database/Connection.php(481): Illuminate\Database\Connection->run('insert into `po...', Array, Object(Closure))
+#4 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/laravel/framework/src/Illuminate/Database/Connection.php(435): Illuminate\Database\Connection->statement('insert into `po...', Array)
+#5 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php(32): Illuminate\Database\Connection->insert('insert into `po...', Array)
+#6 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2098): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `po...', Array, 'id')
+#7 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#8 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(1411): call_user_func_array(Array, Array)
+#9 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(10682): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#10 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(10671): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#11 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(10625): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#12 /Users/sevara/Desktop/laravel/lab-10-araves13-master/database/seeds/PostTableSeeder.php(18): Illuminate\Database\Eloquent\Model->save()
+#13 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(39): PostTableSeeder->run()
+#14 /Users/sevara/Desktop/laravel/lab-10-araves13-master/database/seeds/DatabaseSeeder.php(14): Illuminate\Database\Seeder->call('PostTableSeeder')
+#15 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php(63): DatabaseSeeder->run()
+#16 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(10955): Illuminate\Database\Console\Seeds\SeedCommand->Illuminate\Database\Console\Seeds\{closure}()
+#17 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php(64): Illuminate\Database\Eloquent\Model::unguarded(Object(Closure))
+#18 [internal function]: Illuminate\Database\Console\Seeds\SeedCommand->fire()
+#19 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(1263): call_user_func_array(Array, Array)
+#20 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/laravel/framework/src/Illuminate/Console/Command.php(169): Illuminate\Container\Container->call(Array)
+#21 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/symfony/console/Command/Command.php(256): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/laravel/framework/src/Illuminate/Console/Command.php(155): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#23 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/symfony/console/Application.php(818): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#24 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/symfony/console/Application.php(186): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Seeds\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#25 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/symfony/console/Application.php(117): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#26 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(110): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#27 /Users/sevara/Desktop/laravel/lab-10-araves13-master/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#28 {main}
+
+Next Illuminate\Database\QueryException: SQLSTATE[HY000]: General error: 1364 Field 'user_id' doesn't have a default value (SQL: insert into `posts` (`title`, `content`, `updated_at`, `created_at`) values (learning laravel, This blog post will get you right on track with Laravel!, 2019-04-20 11:57:12, 2019-04-20 11:57:12)) in /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/laravel/framework/src/Illuminate/Database/Connection.php:754
+Stack trace:
+#0 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/laravel/framework/src/Illuminate/Database/Connection.php(710): Illuminate\Database\Connection->runQueryCallback('insert into `po...', Array, Object(Closure))
+#1 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/laravel/framework/src/Illuminate/Database/Connection.php(481): Illuminate\Database\Connection->run('insert into `po...', Array, Object(Closure))
+#2 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/laravel/framework/src/Illuminate/Database/Connection.php(435): Illuminate\Database\Connection->statement('insert into `po...', Array)
+#3 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php(32): Illuminate\Database\Connection->insert('insert into `po...', Array)
+#4 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2098): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `po...', Array, 'id')
+#5 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#6 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(1411): call_user_func_array(Array, Array)
+#7 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(10682): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#8 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(10671): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(10625): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 /Users/sevara/Desktop/laravel/lab-10-araves13-master/database/seeds/PostTableSeeder.php(18): Illuminate\Database\Eloquent\Model->save()
+#11 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(39): PostTableSeeder->run()
+#12 /Users/sevara/Desktop/laravel/lab-10-araves13-master/database/seeds/DatabaseSeeder.php(14): Illuminate\Database\Seeder->call('PostTableSeeder')
+#13 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php(63): DatabaseSeeder->run()
+#14 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(10955): Illuminate\Database\Console\Seeds\SeedCommand->Illuminate\Database\Console\Seeds\{closure}()
+#15 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php(64): Illuminate\Database\Eloquent\Model::unguarded(Object(Closure))
+#16 [internal function]: Illuminate\Database\Console\Seeds\SeedCommand->fire()
+#17 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(1263): call_user_func_array(Array, Array)
+#18 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/laravel/framework/src/Illuminate/Console/Command.php(169): Illuminate\Container\Container->call(Array)
+#19 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/symfony/console/Command/Command.php(256): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/laravel/framework/src/Illuminate/Console/Command.php(155): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/symfony/console/Application.php(818): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/symfony/console/Application.php(186): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Seeds\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#23 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/symfony/console/Application.php(117): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#24 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(110): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#25 /Users/sevara/Desktop/laravel/lab-10-araves13-master/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#26 {main}  
+[2019-04-20 12:08:07] local.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Cannot redeclare App\Http\Controllers\Auth\LoginController::$redirectTo in /Users/sevara/Desktop/laravel/lab-10-araves13-master/app/Http/Controllers/Auth/LoginController.php:29
+Stack trace:
+#0 {main}  
+[2019-04-20 12:09:15] local.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Cannot redeclare App\Http\Controllers\Auth\LoginController::$redirectTo in /Users/sevara/Desktop/laravel/lab-10-araves13-master/app/Http/Controllers/Auth/LoginController.php:29
+Stack trace:
+#0 {main}  
+[2019-04-20 12:09:51] local.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Cannot redeclare App\Http\Controllers\Auth\LoginController::$redirectTo in /Users/sevara/Desktop/laravel/lab-10-araves13-master/app/Http/Controllers/Auth/LoginController.php:29
+Stack trace:
+#0 {main}  
+[2019-04-20 12:09:56] local.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Cannot redeclare App\Http\Controllers\Auth\LoginController::$redirectTo in /Users/sevara/Desktop/laravel/lab-10-araves13-master/app/Http/Controllers/Auth/LoginController.php:29
+Stack trace:
+#0 {main}  
+[2019-04-20 12:09:59] local.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Cannot redeclare App\Http\Controllers\Auth\RegisterController::$redirectTo in /Users/sevara/Desktop/laravel/lab-10-araves13-master/app/Http/Controllers/Auth/RegisterController.php:31
+Stack trace:
+#0 {main}  
+[2019-04-20 12:10:29] local.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Cannot redeclare App\Http\Controllers\Auth\RegisterController::$redirectTo in /Users/sevara/Desktop/laravel/lab-10-araves13-master/app/Http/Controllers/Auth/RegisterController.php:31
+Stack trace:
+#0 {main}  
+[2019-04-20 12:10:31] local.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Cannot redeclare App\Http\Controllers\Auth\RegisterController::$redirectTo in /Users/sevara/Desktop/laravel/lab-10-araves13-master/app/Http/Controllers/Auth/RegisterController.php:31
+Stack trace:
+#0 {main}  
+[2019-04-20 12:10:58] local.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: Parse error: syntax error, unexpected 'public' (T_PUBLIC), expecting ',' or ';' in /Users/sevara/Desktop/laravel/lab-10-araves13-master/app/Http/Controllers/Auth/RegisterController.php:38
+Stack trace:
+#0 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/Users/sevara/D...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Http\\Contro...')
+#2 [internal function]: spl_autoload_call('App\\Http\\Contro...')
+#3 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(1361): ReflectionClass->__construct('App\\Http\\Contro...')
+#4 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(1315): Illuminate\Container\Container->build('App\\Http\\Contro...', Array)
+#5 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(1885): Illuminate\Container\Container->make('App\\Http\\Contro...', Array)
+#6 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(8393): Illuminate\Foundation\Application->make('App\\Http\\Contro...')
+#7 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(8445): Illuminate\Routing\Route->getController()
+#8 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(8427): Illuminate\Routing\Route->controllerMiddleware()
+#9 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(8072): Illuminate\Routing\Route->gatherMiddleware()
+#10 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(8065): Illuminate\Routing\Router->gatherRouteMiddleware(Object(Illuminate\Routing\Route))
+#11 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(8059): Illuminate\Routing\Router->runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#12 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(8050): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#13 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(2432): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 [internal function]: Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}(Object(Illuminate\Http\Request))
+#15 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(52): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#16 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(3157): Illuminate\Routing\Pipeline->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#17 [internal function]: Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#18 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(9763): call_user_func_array(Array, Array)
+#19 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#20 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(32): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#21 [internal function]: Illuminate\Routing\Pipeline->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#22 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(9748): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#23 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(2379): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#24 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(2363): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#25 /Users/sevara/Desktop/laravel/lab-10-araves13-master/public/index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#26 /Users/sevara/Desktop/laravel/lab-10-araves13-master/server.php(21): require_once('/Users/sevara/D...')
+#27 {main}  
+[2019-04-20 12:10:58] local.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: Parse error: syntax error, unexpected 'public' (T_PUBLIC), expecting ',' or ';' in /Users/sevara/Desktop/laravel/lab-10-araves13-master/app/Http/Controllers/Auth/RegisterController.php:38
+Stack trace:
+#0 /Users/sevara/Desktop/laravel/lab-10-araves13-master/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/Users/sevara/D...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Http\\Contro...')
+#2 [internal function]: spl_autoload_call('App\\Http\\Contro...')
+#3 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(1361): ReflectionClass->__construct('App\\Http\\Contro...')
+#4 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(1315): Illuminate\Container\Container->build('App\\Http\\Contro...', Array)
+#5 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(1885): Illuminate\Container\Container->make('App\\Http\\Contro...', Array)
+#6 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(8393): Illuminate\Foundation\Application->make('App\\Http\\Contro...')
+#7 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(8445): Illuminate\Routing\Route->getController()
+#8 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(8427): Illuminate\Routing\Route->controllerMiddleware()
+#9 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(8072): Illuminate\Routing\Route->gatherMiddleware()
+#10 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(2396): Illuminate\Routing\Router->gatherRouteMiddleware(Object(Illuminate\Routing\Route))
+#11 /Users/sevara/Desktop/laravel/lab-10-araves13-master/bootstrap/cache/compiled.php(2383): Illuminate\Foundation\Http\Kernel->gatherRouteMiddleware(Object(Illuminate\Http\Request))
+#12 /Users/sevara/Desktop/laravel/lab-10-araves13-master/public/index.php(58): Illuminate\Foundation\Http\Kernel->terminate(Object(Illuminate\Http\Request), Object(Illuminate\Http\Response))
+#13 /Users/sevara/Desktop/laravel/lab-10-araves13-master/server.php(21): require_once('/Users/sevara/D...')
+#14 {main}  
+[2019-04-20 12:11:11] local.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Cannot redeclare App\Http\Controllers\Auth\LoginController::$redirectTo in /Users/sevara/Desktop/laravel/lab-10-araves13-master/app/Http/Controllers/Auth/LoginController.php:29
+Stack trace:
+#0 {main}  
+[2019-04-20 12:12:11] local.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Cannot redeclare App\Http\Controllers\Auth\LoginController::$redirectTo in /Users/sevara/Desktop/laravel/lab-10-araves13-master/app/Http/Controllers/Auth/LoginController.php:29
+Stack trace:
+#0 {main}  
+[2019-04-20 12:12:13] local.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Cannot redeclare App\Http\Controllers\Auth\LoginController::$redirectTo in /Users/sevara/Desktop/laravel/lab-10-araves13-master/app/Http/Controllers/Auth/LoginController.php:29
+Stack trace:
+#0 {main}  
